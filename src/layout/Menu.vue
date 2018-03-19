@@ -11,8 +11,20 @@
 
 <script lang="ts">
 import Vue from 'vue';
+
 export default Vue.extend({
   name: 'AppMenu'
 });
 </script>
 
+<style lang="scss" scoped>
+.nav-link {
+  font-weight: 500;
+  color: #333;
+
+  &.router-link-exact-active {
+    color: #007bff;
+    border-left: 0.5rem solid #007bff;
+  }
+}
+</style>

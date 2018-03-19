@@ -2,11 +2,11 @@
   <div id="app">
     <AppHeader></AppHeader>
     <div class="container-fruid">
-      <div class="row">
-        <div class="col-md-2">
+      <div class="row my-4">
+        <div class="d-none d-md-block col-md-2">
           <AppMenu></AppMenu>
         </div>
-        <div class="col-md-10">
+        <div class="col-12 col-md-10">
           <router-view/>
         </div>
       </div>
