@@ -4,6 +4,9 @@
         <router-link to="/" class="nav-link">Home</router-link>
       </li>
       <li class="nav-item">
+        <router-link to="/drawer" class="nav-link">Drawer</router-link>
+      </li>
+      <li class="nav-item">
         <router-link to="/about" class="nav-link">About</router-link>
       </li>
       <li class="nav-item">

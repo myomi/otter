@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Profile from './views/Profile.vue';
 import Settings from './views/Settings.vue';
+import Drawer from './views/Drawer.vue';
 import { settings } from 'cluster';
 
 Vue.use(Router);
@@ -29,6 +30,11 @@ export default new Router({
       path: '/settings',
       name: 'settings',
       component: Settings
+    },
+    {
+      path: '/drawer',
+      name: 'drawer',
+      component: Drawer
     }
   ]
 });
