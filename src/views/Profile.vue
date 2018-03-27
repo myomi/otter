@@ -30,8 +30,6 @@ export default Vue.extend({
   name: 'Profile',
   data: function(): Profile {
     return {
-      firstName: 'Mitsuya',
-      lastName: 'Myouchin',
       tags: [
         {
           id: 1,
@@ -49,8 +47,17 @@ export default Vue.extend({
     };
   },
   computed: {
+    firstName: function(): string {
+      // return this.$store.profile.state.firstName;
+      return 'aaa';
+    },
+    lastName: function(): string {
+      return 'bbb';
+      // return this.$store.profile.state.lastName;
+    },
     fullName: function(): string {
-      return `${this.firstName} ${this.lastName}`;
+      return 'xxx';
+      // return `${this.firstName} ${this.lastName}`;
     }
   },
   methods: {
@@ -65,8 +72,6 @@ export default Vue.extend({
 });
 
 interface Profile {
-  firstName: string;
-  lastName: string;
   tags: Tag[];
 }
 
